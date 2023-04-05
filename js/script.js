@@ -1,4 +1,4 @@
-let quotes = [
+const quotes = [
   {
     quote:
       "Spread love everywhere you go. Let no one ever come to you without leaving happier.",
@@ -6,8 +6,7 @@ let quotes = [
     color: "#fed766",
   },
   {
-    quote:
-      "When you reach the end of your rope, tie a knot in it and hang on.",
+    quote: "When you reach the end of your rope, tie a knot in it and hang on.",
     author: "-Franklin D. Roosevelt",
     color: "#63ace5",
   },
@@ -63,35 +62,36 @@ let quotes = [
     color: "#3b5998",
   },
   {
-      quote:
+    quote:
       "If you really look closely, most overnight successes took a long time",
     author: "Steve Jobs",
     color: "#854442",
   },
   {
-      quote: "I find that the harder I work, the more luck I seem to have.",
+    quote: "I find that the harder I work, the more luck I seem to have.",
     author: "-Thomas Jefferson",
     color: "#4d648d",
   },
   {
-      quote: "The way to get started is to quit talking and begin doing.",
+    quote: "The way to get started is to quit talking and begin doing.",
     author: "-Walt Disney",
     color: "#7bc043",
   },
   {
-      quote: "Nothing is impossible, the word itself says, I'm possible!'",
+    quote: "Nothing is impossible, the word itself says, ‘I'm possible!'",
     author: "-Audrey Hepburn",
     color: "#35a79c",
   },
 ];
 
-const p=document.querySelector("p");
-const small=document.querySelector("small");const button=document.querySelector("button");
-button.addEventListener("click",()=>{
-  const index = Math.floor(Math.random() * (15 - 1 + 1)) + 1;//generate random 
-  // number between 1 to 15 and 1,15 also included
-  const x = quotes[index]; //take random number and add that object propety
-  p.innerHTML = x.quote; //display quote using dot notation
-  small.innerHTML = x.author; //" " author " "
-  document.body.style.background = x.color; //change color of background
-})
+const p = document.querySelector("p");
+const small = document.querySelector("small");
+const button = document.querySelector("button");
+
+button.addEventListener("click", () => {
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+  const { quote, author, color } = quotes[randomIndex];
+  p.textContent = quote;
+  small.textContent = author;
+  document.body.style.background = color;
+});
