@@ -1,0 +1,28 @@
+body{
+    background-color:blueviolet;
+    color: white;
+    text-transform:uppercase;   
+}
+.btn{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height:400px;
+}
+button{
+    border-radius: 5px;
+    background-color: transparent;
+    border:2px solid white;
+    color:white;
+    padding:0.5rem;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color:rgba(255, 255, 255, 0.2);
+    cursor:pointer;
+
+}
+small{
+    position:relative;
+    top:2.5rem;
+}
