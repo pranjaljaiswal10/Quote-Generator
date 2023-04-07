@@ -85,9 +85,8 @@ const quotes = [
 ];
 
 const p = document.querySelector("p");
-const small = document.querySelector("small");
+const small = document.querySelector("span");
 const button = document.querySelector("button");
-
 button.addEventListener("click", () => {
   const randomIndex = Math.floor(Math.random() * quotes.length);
   const { quote, author, color } = quotes[randomIndex];

@@ -1,0 +1,16 @@
+@media only screen and (max-width:700px){
+    span{
+        margin:auto;
+        align-self:center;
+    }
+    p{
+        padding-top: 4rem;
+    }
+    .quote{
+        flex-direction: column;
+    }
+    .btn{
+        height:0;
+    }
+
+}

@@ -1,28 +1,42 @@
-body{
-    background-color:blueviolet;
-    color: white;
-    text-transform:uppercase;   
+* {
+  padding: 0;
+  margin: 0;
 }
-.btn{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    height:400px;
+body {
+  background-color: blueviolet;
+  color: white;
+  text-transform: uppercase;
 }
-button{
-    border-radius: 5px;
-    background-color: transparent;
-    border:2px solid white;
-    color:white;
-    padding:0.5rem;
-    transition: background-color 0.3s ease;
+.quote,
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  flex-direction: row;
 }
-button:hover{
-    background-color:rgba(255, 255, 255, 0.2);
-    cursor:pointer;
-
+.btn {
+  height: 35vh;
 }
-small{
-    position:relative;
-    top:2.5rem;
+p {
+  font-size: 1.563rem;
+  width: 70%;
+  text-align: center;
+}
+span {
+  font-size: 1rem;
+  align-self: end;
+  margin: 0 1rem 5rem 0;
+}
+button {
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
 }
